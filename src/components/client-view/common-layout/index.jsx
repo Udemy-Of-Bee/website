@@ -1,9 +1,10 @@
 'use client';
-import { useParams } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
 import Navbar from '../navbar';
 
 const CommonLayout = ({ children }) => {
-    const pathName = useParams();
+
+    const pathName = usePathname();
     return (
         <>
             {pathName !== '/admin' ? <Navbar /> : null}

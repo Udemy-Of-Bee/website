@@ -65,7 +65,7 @@ export default function Navbar() {
     return (
         <>
             <header
-                className={`fixed top-0 w-full z-30 bg-white transition-all ${scrollActive ? 'shadow-md pt-0' : 'pt-4'}`}
+                className={`fixed top-0 w-full z-30 bg-white-500 transition-all ${scrollActive ? 'shadow-md pt-0' : 'pt-4'}`}
             >
                 <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
                     {/* Logo */}
