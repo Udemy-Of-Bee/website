@@ -120,6 +120,7 @@ export default function AdminPage() {
                     setFormData={setEducationViewFormData}
                     handleSaveData={handleSaveData}
                     data={allData?.education}
+                    setAllData={setAllData}
                 />
             ),
         },
@@ -138,7 +139,7 @@ export default function AdminPage() {
         {
             id: 'contact',
             label: 'Contact',
-            component: <AdminContactView />,
+            component: <AdminContactView data={allData && allData?.contact} />,
         },
     ];
 
