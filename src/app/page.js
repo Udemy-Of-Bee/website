@@ -6,7 +6,7 @@ import ClientProjectView from '@/components/client-view/project';
 
 
 async function extractAllData(currentSection) {
-    const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
+    const res = await fetch(`https://nextjsportfoliowebsite.netlify.app/api/${currentSection}/get`, {
         method: 'GET',
         cache: 'no-store',
     });
